@@ -1,0 +1,187 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-07-26 09:44:52.413268",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_pa4c",
+  "amended_from",
+  "naming_series",
+  "company",
+  "from_date",
+  "to_date",
+  "posting_date",
+  "column_break_qxoa",
+  "skip_zero_overtime",
+  "skip_if_slip_exists",
+  "submit_after_creation",
+  "get_employees_section",
+  "branch",
+  "department",
+  "designation",
+  "column_break_kqxe",
+  "employment_type",
+  "employee_grade",
+  "get_employees",
+  "select_employees_section",
+  "employees"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_pa4c",
+   "fieldtype": "Section Break",
+   "label": "Period"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Bulk Overtime Slip Tool",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "To Date"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_qxoa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "skip_zero_overtime",
+   "fieldtype": "Check",
+   "label": "Skip Zero Overtime"
+  },
+  {
+   "default": "0",
+   "fieldname": "skip_if_slip_exists",
+   "fieldtype": "Check",
+   "label": "Skip if Slip Exists"
+  },
+  {
+   "default": "0",
+   "fieldname": "submit_after_creation",
+   "fieldtype": "Check",
+   "label": "Submit After Creation"
+  },
+  {
+   "collapsible": 1,
+   "description": "Set filters to fetch employees",
+   "fieldname": "get_employees_section",
+   "fieldtype": "Section Break",
+   "label": "Get Employees"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "column_break_kqxe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "employment_type",
+   "fieldtype": "Link",
+   "label": "Employment Type",
+   "options": "Employment Type"
+  },
+  {
+   "fieldname": "employee_grade",
+   "fieldtype": "Link",
+   "label": "Employee Grade",
+   "options": "Employee Grade"
+  },
+  {
+   "fieldname": "get_employees",
+   "fieldtype": "Button",
+   "label": "Get Employees"
+  },
+  {
+   "fieldname": "select_employees_section",
+   "fieldtype": "Section Break",
+   "label": "Select Employees"
+  },
+  {
+   "fieldname": "employees",
+   "fieldtype": "Table",
+   "label": "Employees",
+   "options": "Bulk Overtime Slip Tool Employee"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "BOT-.YYYY.-",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-27 17:08:03.062726",
+ "modified_by": "Administrator",
+ "module": "Bulk Overtime Slip",
+ "name": "Bulk Overtime Slip Tool",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
