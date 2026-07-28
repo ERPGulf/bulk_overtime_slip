@@ -44,11 +44,8 @@ def create_overtime_slips(docname):
             slip.employee = row.employee
             slip.posting_date = tool.posting_date
 
-            if tool.respect_payroll_frequency:
-                slip.get_frequency_and_dates()
-            else:
-                slip.start_date = tool.from_date
-                slip.end_date = tool.to_date
+            slip.start_date = tool.from_date
+            slip.end_date = tool.to_date
 
             # Creates overtime_details and saves the document
 
